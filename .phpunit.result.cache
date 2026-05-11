@@ -1,1 +1,1 @@
-{"version":2,"defects":[],"times":{"NoteTest::testCanCreateNote":0.008,"NoteTest::testValidTypes":0.001,"NoteTest::testValidEntityTypes":0,"NoteTest::testIsValid":0,"NoteTest::testToArray":0,"NoteTest::testFromArray":0,"NoteTest::testFluentInterface":0}}
+{"version":2,"defects":[],"times":{"NoteTest::testCanCreateNote":0.013,"NoteTest::testValidTypes":0.002,"NoteTest::testValidEntityTypes":0.002,"NoteTest::testIsValid":0.001,"NoteTest::testToArray":0.001,"NoteTest::testFromArray":0.002,"NoteTest::testFluentInterface":0.001}}

@@ -1,0 +1,1 @@
+{"version":2,"defects":[],"times":{"NoteTest::testCanCreateNote":0.008,"NoteTest::testValidTypes":0.001,"NoteTest::testValidEntityTypes":0,"NoteTest::testIsValid":0,"NoteTest::testToArray":0,"NoteTest::testFromArray":0,"NoteTest::testFluentInterface":0}}

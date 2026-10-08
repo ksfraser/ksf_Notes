@@ -1,7 +1,7 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use Ksfraser\Notes\Entity\Note;
+use ksfraser\Notes\Entity\Note;
 
 class NoteTest extends TestCase
 {

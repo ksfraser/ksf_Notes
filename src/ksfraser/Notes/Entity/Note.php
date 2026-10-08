@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Ksfraser\Notes\Entity;
+namespace ksfraser\Notes\Entity;
 
 class Note
 {

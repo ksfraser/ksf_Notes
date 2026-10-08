@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Ksfraser\Notes\Service;
+namespace ksfraser\Notes\Service;
 
-use Ksfraser\Notes\Entity\Note;
+use ksfraser\Notes\Entity\Note;
 
 class NoteService
 {

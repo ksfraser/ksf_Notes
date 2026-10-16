@@ -15,7 +15,7 @@ ksf_Notes provides a flexible note-taking system that integrates with CRM, Proje
 
 ### 1.1 Namespace
 ```php
-Ksfraser\Notes\
+ksfraser\Notes\
 ```
 
 ### 1.2 Layer Pattern

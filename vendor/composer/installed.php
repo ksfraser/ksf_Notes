@@ -3,7 +3,7 @@
         'name' => 'ksfraser/ksf-notes',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '653a29d8f3464bb2cf1458b3e79db2705e9fb875',
+        'reference' => '6782083ce6f3a586e7ff1914e0117e592049208a',
         'type' => 'php-package',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'ksfraser/ksf-notes' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '653a29d8f3464bb2cf1458b3e79db2705e9fb875',
+            'reference' => '6782083ce6f3a586e7ff1914e0117e592049208a',
             'type' => 'php-package',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

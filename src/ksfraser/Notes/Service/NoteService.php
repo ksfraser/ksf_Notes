@@ -26,7 +26,7 @@ class NoteService
             return null;
         }
 
-        $sql = "INSERT INTO " . TB_PREF . "fa_crm_notes
+        $sql = "INSERT INTO " . TB_PREF . "ksf_Notes
             (entity_id, entity_type, note_type, note, created_by)
             VALUES (
                 " . db_escape($entityId) . ",
@@ -46,7 +46,7 @@ class NoteService
             return [];
         }
 
-        $sql = "SELECT * FROM " . TB_PREF . "fa_crm_notes
+        $sql = "SELECT * FROM " . TB_PREF . "ksf_Notes
             WHERE entity_id = " . db_escape($entityId) . "
             AND entity_type = " . db_escape($entityType) . "
             ORDER BY created_at DESC";
@@ -67,7 +67,7 @@ class NoteService
             return null;
         }
 
-        $sql = "SELECT * FROM " . TB_PREF . "fa_crm_notes
+        $sql = "SELECT * FROM " . TB_PREF . "ksf_Notes
             WHERE id = " . db_escape($noteId);
 
         $result = db_query($sql, "Could not get note");
@@ -87,7 +87,7 @@ class NoteService
             $sets[] = "note_type = " . db_escape($noteType);
         }
 
-        $sql = "UPDATE " . TB_PREF . "fa_crm_notes SET
+        $sql = "UPDATE " . TB_PREF . "ksf_Notes SET
             " . implode(', ', $sets) . "
             WHERE id = " . db_escape($noteId);
 
@@ -101,7 +101,7 @@ class NoteService
             return false;
         }
 
-        $sql = "DELETE FROM " . TB_PREF . "fa_crm_notes
+        $sql = "DELETE FROM " . TB_PREF . "ksf_Notes
             WHERE id = " . db_escape($noteId);
 
         db_query($sql, "Could not delete note");
@@ -114,7 +114,7 @@ class NoteService
             return [];
         }
 
-        $sql = "SELECT * FROM " . TB_PREF . "fa_crm_notes
+        $sql = "SELECT * FROM " . TB_PREF . "ksf_Notes
             WHERE note LIKE " . db_escape('%' . $keyword . '%');
 
         if ($entityType !== null) {
@@ -139,7 +139,7 @@ class NoteService
             return [];
         }
 
-        $sql = "SELECT * FROM " . TB_PREF . "fa_crm_notes
+        $sql = "SELECT * FROM " . TB_PREF . "ksf_Notes
             WHERE entity_type = " . db_escape($entityType) . "
             AND note_type = " . db_escape($noteType) . "
             ORDER BY created_at DESC LIMIT " . db_escape($limit);
@@ -161,7 +161,7 @@ class NoteService
         }
 
         $sql = "SELECT entity_type, entity_id, COUNT(*) as note_count
-            FROM " . TB_PREF . "fa_crm_notes
+            FROM " . TB_PREF . "ksf_Notes
             GROUP BY entity_type, entity_id";
 
         $result = db_query($sql, "Could not get note counts");
